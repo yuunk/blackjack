@@ -1,0 +1,57 @@
+#mask{
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* continue-modal */
+#continue-modal, #check-ends-modal, #game-over-modal{
+    background: white;
+    height: 110px;
+    width: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2;
+}
+
+.modal-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#continue-title, #check-ends-title, .game-over-title{
+    background: pink;
+    height: 45px;
+    width: 100%;
+    text-align: center;
+    line-height: 45px;
+}
+
+.confirm-button{
+    background: gray;
+    height: 40px;
+    width: 100px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* game over modal*/
+#game-over-ok{
+    background: red;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}

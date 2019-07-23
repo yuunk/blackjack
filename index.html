@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="js">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/user_action.css">
+  <title>Black Jack</title>
+</head>
+
+<body>
+
+  <h1>Black Jack</h1>
+  <div class="content">
+
+    <div class="play-table">
+      <div class="table-header">
+        <div class="header-table-content user-view-area">
+          <div id="user-total-card-view" class="total-card"></div>
+          <div class="player-name">Player</div>
+        </div>
+        <div class="croupier-img header-table-content">
+          <img src="img/croupier.png" alt="">
+        </div>
+        <div class="header-table-content user-view-area">
+          <div id="croupier-total-card-view" class="total-card"></div>
+          <div class="player-name">Croupier</div>
+        </div>
+      </div>
+
+      <div id="croupier-cards" class="card-area"></div>
+      <div id="result-text"></div>
+      <div id="user-cards" class="card-area"></div>
+
+    </div>
+
+    <div id="switch-action" class="switch-action-flex">
+      <div id="play">play</div>
+      
+      <!-- bet -->
+      <div id="bet-action" class="hidden">
+        <div id="bet-1000" class="bet-chip">1000</div>
+        <div id="bet-100" class="bet-chip">100</div>
+        <div id="reset" class="bet-chip">RESET</div>
+      </div>
+      <!-- bet end-->
+      
+      <!-- game-action-->
+      <div id="game-action" class="hidden">
+        <div class="wrap-game-button">
+          <div id="hit" class="game-button">HIT</div>
+          <div id="stand" class="game-button">STAND</div>
+        </div>
+
+        <div id="mask" class="hidden"></div>
+        <div id="continue-modal" class="hidden">
+          <div id="continue-title">continue game?</div>
+          <div id="continue-yes" class="confirm-button">YES</div>
+          <div id="continue-no" class="confirm-button">NO</div>
+        </div>
+
+        <div id="check-ends-modal" class="hidden">
+          <div id="check-ends-title">Do you really want to quit</div>
+          <div id="ends-yes" class="confirm-button">YES</div>
+          <div id="ends-no" class="confirm-button">NO</div>
+        </div>
+
+        <div id="game-over-modal" class="hidden">
+          <div class="game-over-title">Game Over!</div>
+          <div id="game-over-ok">OK</div>
+        </div>
+        
+      </div>
+      <!-- game-action end-->
+
+      <!-- money -->
+      <div id="money-view" class="money-wrap-area hidden">
+        <div class="money-wrap">
+          <div class="money-title">Your Money</div>
+          <div id="user-money" class="money">10000</div>
+        </div>
+        <div class="money-wrap">
+          <div class="money-title">Bet Money</div>
+          <div id="total-bet" class="money">0</div>
+        </div>
+      </div>
+      <!-- money end -->
+
+      <!-- play -->
+      <div id="game-start" class="hidden">Game Start!</div>
+      <!-- play end-->
+      
+    </div>
+
+  </div>
+
+  <!-- -->
+  <script src="js/switch-action.js" type="module"></script>
+  <script src="js/action/bet.js" type="module"></script>
+  <script src="js/action/game.js" type="module"></script>
+  <script src="js/action/continue.js" type="module"></script>
+  
+</body>
+
+</html>
